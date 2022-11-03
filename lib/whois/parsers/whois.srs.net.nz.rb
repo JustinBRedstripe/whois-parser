@@ -72,7 +72,7 @@ module Whois
       end
 
       property_supported :expires_on do
-        node("domain_datebilleduntil") { |value| parse_time(value) }
+        node("Registry Expiry Date") { |value| parse_time(value) }
       end
 
 
